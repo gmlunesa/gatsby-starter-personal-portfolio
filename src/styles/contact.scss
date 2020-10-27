@@ -1,0 +1,40 @@
+section.contact {
+  min-height: 100vh;
+  height: 100%;
+
+  ul {
+    margin-top: 1rem;
+  }
+
+  .list-group {
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    .list-group-item {
+      font-size: 3rem;
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+
+  .img-container {
+    img {
+      display: block;
+      // height: auto;
+      // max-width: 100%;
+      margin: 0px auto;
+      width: 15rem;
+      height: 15rem;
+      border-style: none;
+    }
+  }
+  @media (min-width: 960px) {
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 85vh;
+
+    .list-group {
+      justify-content: left;
+    }
+  }
+}

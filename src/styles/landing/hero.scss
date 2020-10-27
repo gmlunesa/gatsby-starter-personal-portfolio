@@ -1,0 +1,125 @@
+section.hero {
+  .hero-introduction {
+    text-align: center;
+    h1 {
+      font-weight: 800;
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+  }
+
+  // Links
+  .list-group {
+    justify-content: center;
+
+    .list-group-item {
+      font-size: 1.75rem;
+      background-color: transparent;
+      border-color: transparent;
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+
+      a {
+        color: var(--link-secondary);
+      }
+    }
+  }
+
+  .hero-bio {
+    .card {
+      border-radius: 20px;
+      border: transparent;
+      text-align: center;
+      background-color: var(--complement);
+      transition: color 0.2s ease-in, background-color 0.2s ease-in;
+
+      .card-body {
+        margin: 25px 0;
+      }
+
+      .icon {
+        width: 6rem;
+        height: 6rem;
+        margin: 0px auto;
+        margin-bottom: 1rem;
+        text-align: center;
+        display: block;
+        position: relative;
+        border: 0.3rem solid var(--link-secondary);
+        background: var(--link-secondary);
+        border-radius: 100%;
+
+        img {
+          border-radius: 100%;
+        }
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  span.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(-10deg);
+    }
+    20% {
+      transform: rotate(12deg);
+    }
+    30% {
+      transform: rotate(-10deg);
+    }
+    40% {
+      transform: rotate(9deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @media (min-width: 960px) {
+    height: 90vh;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .hero-introduction {
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 992px) {
+    margin-top: 2.9rem;
+    .header-content {
+      h1 {
+        line-height: 3rem;
+      }
+    }
+
+    .hero-introduction {
+      h1 {
+        font-size: 3.75rem;
+        line-height: 5rem;
+      }
+    }
+
+    .main-button {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

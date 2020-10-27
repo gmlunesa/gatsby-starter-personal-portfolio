@@ -1,0 +1,123 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+@import "../styles/header.scss";
+@import "../styles/footer.scss";
+@import "../styles/about.scss";
+@import "../styles/contact.scss";
+
+@import "../styles/landing/hero.scss";
+@import "../styles/landing/content.scss";
+
+body {
+  font-family: "Montserrat", "Arial", "sans-serif";
+  font-weight: 450;
+
+  color: var(--base);
+  background-color: var(--primary);
+
+  // Avoid flash when switching modes
+  transition: color 0.2s ease-in, background-color 0.2s ease-in !important;
+
+  -webkit-tap-highlight-color: transparent;
+
+  // Link colors
+  --link-primary: #5a67d8;
+  --link-secondary: #3182ce;
+  --link-tertiary: #63b3ed;
+  --text-on-link: #ffffff;
+
+  ::selection {
+    color: white;
+    background-color: var(--link-tertiary);
+  }
+
+  h1 {
+    font-weight: bolder;
+    color: var(--base);
+  }
+
+  h2 {
+    font-weight: bold;
+    color: var(--base);
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--base);
+  }
+
+  h4 {
+    font-size: 1rem;
+    color: var(--contrast);
+    opacity: 0.65;
+  }
+
+  p {
+    font-size: 1.15rem;
+    color: var(--contrast);
+  }
+
+  a {
+    color: var(--link-primary);
+    transition: opacity 0.4s ease-in-out;
+
+    &:hover {
+      color: var(--link-primary);
+      opacity: 0.7;
+      text-decoration: none;
+    }
+  }
+
+  .main-button {
+    color: var(--text-on-link);
+    background-color: var(--link-secondary);
+    border-color: var(--link-secondary);
+    font-size: 1.15rem;
+    border-radius: 0.5rem;
+    font-weight: bolder;
+    transition: opacity 0.5s ease-in-out;
+    padding: 1rem 0.75rem;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      background-color: var(--link-secondary) !important;
+      border-color: transparent !important;
+    }
+  }
+}
+
+body.light {
+  // Background colors
+  // Gray family
+  --primary: #ffffff;
+  --secondary: #f7fafc;
+  --tertiary: #e2e8f0;
+
+  // Blue
+  --complement: #ebf8ff;
+  --extra: #ededed;
+
+  --base: #000000;
+  --contrast: #2d3748;
+}
+
+body.dark {
+  -webkit-font-smoothing: antialiased;
+
+  // Background colors
+  --primary: #000000;
+  --secondary: #111111;
+  --tertiary: #1b1c1e;
+
+  // Blue family
+  --complement: #00132c;
+  --extra: #202229;
+
+  // Text
+  --base: #ffffff;
+  --contrast: #e5e5e5;
+}

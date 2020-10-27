@@ -1,0 +1,72 @@
+section.about {
+  min-height: 100vh;
+  height: 100%;
+
+  .headline {
+    padding-top: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 0.85rem;
+    font-style: oblique;
+    color: var(--contrast);
+    opacity: 0.65;
+  }
+
+  .img-container {
+    img {
+      display: block;
+      position: relative;
+      margin: 0px auto;
+      width: 10rem;
+      height: 10rem;
+      border-style: none;
+      border-radius: 5%;
+    }
+  }
+
+  .about-img-wrapper {
+    border-radius: 15px;
+    width: 30rem;
+    height: 30rem;
+    display: block;
+    position: relative;
+    margin: 20px auto;
+  }
+
+  .card {
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--tertiary);
+    transition: color 0.2s ease-in, background-color 0.2s ease-in;
+
+    .card-text {
+      text-align: justify;
+    }
+  }
+
+  @media (min-width: 960px) {
+    padding-top: 0;
+    padding-bottom: 0;
+    .headline {
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 960px) {
+    // margin: 0 0.4rem;
+
+    .about-img-wrapper {
+      width: 20rem;
+      height: 20rem;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+    }
+  }
+}
