@@ -121,3 +121,54 @@ body.dark {
   --base: #ffffff;
   --contrast: #e5e5e5;
 }
+
+section.page404 {
+  min-height: 85vh;
+  height: 100%;
+  h3 {
+    font-size: 6rem;
+  }
+  .row-404 {
+    display: block;
+  }
+  .img-container {
+    img {
+      display: block;
+      // height: auto;
+      // max-width: 100%;
+      margin: 0px auto;
+      width: 75%;
+      // height: 15rem;
+      border-style: none;
+    }
+  }
+
+  ul {
+    margin-top: 1rem;
+  }
+
+  .list-group {
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    .list-group-item {
+      font-size: 3rem;
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .img-container {
+      img {
+        display: block;
+        // height: auto;
+        // max-width: 100%;
+        margin: 0px auto;
+        height: 100%;
+        // height: 15rem;
+        border-style: none;
+      }
+    }
+  }
+}
