@@ -36,11 +36,12 @@ export default class Footer extends Component {
                         className="link"
                         smooth={true}
                         role="button"
+                        aria-label="To the top"
                       >
                         <FontAwesomeIcon icon={faArrowUp} />
                       </Link>
                     </li>
-                    <li className="list-inline-item mr-4">
+                    <li className="list-inline-item mr-4" alt="site title">
                       &copy; {new Date().getFullYear()}.{" "}
                       {data.site.siteMetadata.title}.
                     </li>
@@ -49,6 +50,7 @@ export default class Footer extends Component {
                         href="mailto:emailName@gmail.com"
                         target="_blank"
                         rel="noreferrer"
+                        alt="email link"
                       >
                         <FontAwesomeIcon icon={faEnvelope} />
                       </a>
@@ -58,6 +60,7 @@ export default class Footer extends Component {
                         href="https://github.com/githubName"
                         target="_blank"
                         rel="noreferrer"
+                        alt="github link"
                       >
                         <FontAwesomeIcon icon={faGithub} />
                       </a>
@@ -67,6 +70,7 @@ export default class Footer extends Component {
                         href="https://linkedin.com/linkedInName"
                         target="_blank"
                         rel="noreferrer"
+                        alt="linkedin link"
                       >
                         <FontAwesomeIcon icon={faLinkedin} />
                       </a>
@@ -76,6 +80,7 @@ export default class Footer extends Component {
                         href="https://twitter.com/twitterName"
                         target="_blank"
                         rel="noreferrer"
+                        alt="twitter link"
                       >
                         <FontAwesomeIcon icon={faTwitter} />
                       </a>

@@ -46,7 +46,7 @@ const AboutPage = () => (
           {/* + Image */}
           <div className="col-lg-6 my-auto mx-auto">
             <Image
-              fileName="photo.jpg"
+              fileName="about.jpg"
               alt="About page"
               className="about-img-wrapper"
             />
