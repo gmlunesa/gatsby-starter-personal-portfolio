@@ -98,6 +98,7 @@ To make it easier for you, this starter is sliced into multiple components or se
 ### Components and Pages
 
 <details><summary>Components</summary>
+
 #### layout.js
 └── 📁 src/components/layout.js
 
@@ -132,6 +133,7 @@ Handles the social media links seen throughout the site.
 </details>
 
 <details><summary>Pages</summary>
+    
 #### index.js
 └── 📁 src/pages/index.js
 
