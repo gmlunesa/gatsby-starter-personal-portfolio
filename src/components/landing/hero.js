@@ -7,7 +7,7 @@ import { Link } from "react-scroll"
 
 export default function Hero() {
   return (
-    <section className="hero" id="about">
+    <section className="hero" id="hero">
       <div className="container h-100">
         <div className="row h-100 justify-content-around">
           {/* + Hero section: Left side */}

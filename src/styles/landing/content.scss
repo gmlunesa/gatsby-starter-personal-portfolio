@@ -12,7 +12,7 @@ section.content {
       }
     }
 
-    h1 {
+    h2 {
       text-align: center;
       font-weight: 800;
       font-size: 2.2rem;
@@ -64,7 +64,7 @@ section.content {
 
   @media (min-width: 960px) {
     .subsection {
-      h1 {
+      h2 {
         text-align: left;
 
         .word {
@@ -84,7 +84,7 @@ section.content {
       }
 
       &:hover {
-        h1 {
+        h2 {
           .dot {
             background-color: var(--link-secondary);
             opacity: 1;

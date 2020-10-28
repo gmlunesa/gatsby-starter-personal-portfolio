@@ -1,4 +1,19 @@
 footer {
   background-color: var(--secondary);
   bottom: 0;
+
+  ul {
+    padding-inline-start: 1px;
+  }
+
+  .link {
+    background: var(--tertiary);
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: var(--base);
+    font-weight: normal;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }

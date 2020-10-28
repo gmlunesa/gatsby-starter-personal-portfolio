@@ -43,7 +43,10 @@ export default class Header extends Component {
         `}
         render={data => (
           <>
-            <nav className={`navbar navbar-expand-lg ${visibilityClass}`}>
+            <nav
+              id="header"
+              className={`navbar navbar-expand-lg ${visibilityClass}`}
+            >
               <div className="container">
                 <Link className="navbar-brand" to="/">
                   {data.site.siteMetadata.title}

@@ -43,10 +43,10 @@ export default class Content extends Component {
               <div className="container">
                 {/* + Job subsection */}
                 <div className="subsection">
-                  <h1>
+                  <h2>
                     <span className="dot"></span>What do I{" "}
                     <span className="word">do</span>?
-                  </h1>
+                  </h2>
 
                   <div className="card">
                     <div className="card-body">
@@ -79,10 +79,10 @@ export default class Content extends Component {
 
                 {/* + Technologies subsection */}
                 <div className="subsection">
-                  <h1 className="mt-5">
+                  <h2 className="mt-5">
                     <span className="dot"></span>What do I{" "}
                     <span className="word">know</span>?
-                  </h1>
+                  </h2>
                   <div className="row">
                     {data.allLanguagesJson.edges.map(({ node }, index) => (
                       <div className="col-lg-4 col-md-6" key={index}>
@@ -105,10 +105,10 @@ export default class Content extends Component {
 
                 {/* + School subsection */}
                 <div className="subsection">
-                  <h1 className="mt-5">
+                  <h2 className="mt-5">
                     <span className="dot"></span>What did I{" "}
                     <span className="word">study</span>?
-                  </h1>
+                  </h2>
 
                   <div className="card">
                     <div className="card-body">
@@ -143,10 +143,10 @@ export default class Content extends Component {
 
                 {/* + Projects subsection */}
                 <div className="subsection">
-                  <h1 className="mt-5">
+                  <h2 className="mt-5">
                     <span className="dot"></span>What have I{" "}
                     <span className="word">experimented with</span>?
-                  </h1>
+                  </h2>
                   <div className="row">
                     {data.allProjectsJson.edges.map(({ node }, index) => (
                       <div className="col-lg-4" key={index}>
