@@ -112,7 +112,7 @@ Handles the common components that will be seen in all the pages of the site. In
 Handles the hero section of the landing page.
 
 #### content.js
-└── 📁 src/components/landing/hero.js
+└── 📁 src/components/landing/content.js
 
 Handles the resume section of the landing page.
 
@@ -121,13 +121,13 @@ Handles the resume section of the landing page.
 
 Handles the GraphQL queries for images.
 
-#### image.js
+#### seo.js
 └── 📁 src/components/seo.js
 
 Handles the SEO optimization.
 
 #### links.js
-└── 📁 src/components/seo.js
+└── 📁 src/components/links.js
 
 Handles the social media links seen throughout the site.
 </details>
